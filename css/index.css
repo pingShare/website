@@ -1,24 +1,7 @@
-.videos_res{overflow: hidden;
-    /* height: 100vh;
-    margin: 0 auto; */
-    width: 100%;
-    position: fixed;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 0;
-    z-index: -88;
-}
-
-
 *{
     margin: 0;
-    padding: 0;
-  
+    padding: 0; 
 }
-/* body{
-    background-color: coral;
-} */
 li{
     list-style: none;
 }
@@ -30,9 +13,9 @@ a{
     background-color: rgba(255,255,255,0.7);
     width: 95%;
     display: flex;
-    height: 110px;
+    height: 100px;
     margin: 0 auto;
-    /* padding-left: 20px; */
+    padding-left: 20px;
     align-items: center;
     justify-content: space-between;
 }
@@ -81,35 +64,63 @@ a{
     text-align: center;
 }
 #content-wapper{
-    /* margin: 20px 20px 0 20px;  */
     display: flex;
     justify-content: center;
 }
-
+.content-item{
+    margin-top: 40px;
+}
 .item1{
     background-color: rgba(255,255,255,0.7); 
     width: 800px;
     height: 400px; 
-    display:block;   
+    display:block;  
+}
+.item1-content{
+    padding: 30px 40px;
+}
+.item1-content h2{
+    margin: 30px 0;
+}
+.item1-content p{
+    font-size: 18px;
+    line-height: 40px;
 }
 .item2{
    display: none;
+   vertical-align: middle;
 }
 .item2-detail{
-    width: 400px;
-    height: 450px;
+    width: 360px;
+    height: 400px;
     display: inline-block;
-    background-color: rgba(255,255,255,0.7);         
+    background-color: rgba(255,255,255,0.7); 
+    vertical-align: middle;
 }
 .item2-detail:nth-child(1){
     margin-right: 30px;
 }
+.item2-content{
+    padding: 30px 20px;
+    line-height: 25px;  
+}
+.item2-content p{
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: left;
+}
 .item3{
     text-align: left;
     display: none;
+    /* color: white; */
+    padding: 0 40px;
 }
 .item3 img{
     border: 5px solid white;
+}
+.item3 p{
+    margin: 20px 0;
+    font-size: 18px;
 }
 .item4{
     display: none;
@@ -118,8 +129,43 @@ a{
     width: 400px;
     height: 450px;
     display: inline-block;
-    background-color: rgba(255,255,255,0.7);         
+    background-color: rgba(255,255,255,0.7);
+    text-align: center;        
 }
-.item4-detail:nth-child(1){
-    margin-right: 30px;
+.fomSubmit{
+    /* margin-top: 30px; */
+    text-align: center;
+    width: 80%;
+    margin: 30px auto;
+}
+input{
+    width: 300px;
+    height: 40px;
+    background-color: transparent;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+textarea{
+    width: 300px;
+    height: 60px;
+    background-color: transparent;
+}
+.fomSubmit button{
+    width: 60px;
+    height: 30px;
+    background-color: transparent;
+    border-style: none;
+}
+.videos_res{
+   position: fixed;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   top: 0;
+   z-index: -88;
+}
+.videos_res video{
+   width: 100%;
+   height: 100%;
+   object-fit: fill;
 }
