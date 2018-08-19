@@ -1,5 +1,12 @@
 $(function(){
-    console.log($(".nav-item").find(".selected"));
+    // $('body').toggleClass('loaded');
+   // $(document).ready(function() {
+   setTimeout(function(){
+        $('body').addClass('loaded');
+        $('h1').css('color','#222222');
+    }, 2500);     
+   // });
+   // console.log($(".nav-item").find(".selected"));
     $(".nav-item").on('click',function(){
 
        $(this).addClass('selected').siblings().removeClass('selected');
