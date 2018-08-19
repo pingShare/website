@@ -6,9 +6,10 @@ $(function(){
         $('h1').css('color','#222222');
     }, 2500);     
    // });
+   //$('.drop-toggle').dropdown();
    // console.log($(".nav-item").find(".selected"));
     $(".nav-item").on('click',function(){
-
+        console.log($(this).index())
        $(this).addClass('selected').siblings().removeClass('selected');
        navIndex = $(this).index();
        $($(".content-item").get(navIndex)).css("display","block")

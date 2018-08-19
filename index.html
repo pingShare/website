@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="font-awesome-4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/pre.css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <title>个人网站</title>
 </head>
 <body>
@@ -14,11 +15,20 @@
         <!-- 导航栏 -->
         <div id="nav">  
             <a id="title" href="#">
-                <!-- <div class="nav-icon"> -->
                 <i class="fa fa-send-o nav-icon"></i>
-                <!-- </div> -->
-                <span> MESELF</span>  
+                <span>MESELF</span>  
             </a>
+           <div class="dropdown item-list">
+               <button id="dropdownMenu1" class="navbar-toggler hidden-lg-up nav-btn dropdown-toggle" type="button"  data-toggle="dropdown">
+                        &#9776;
+                </button>           
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                    <li class="nav-item selected">主页</li>
+                    <li class="nav-item">关于</li>
+                    <li class="nav-item">项目</li>
+                    <li class="nav-item">联系方式</li>
+                </ul>
+            </div>
             <ul id="nav-list">
                 <li class="nav-item selected">主页</li>
                 <li class="nav-item">关于</li>
@@ -54,7 +64,7 @@
                                 </video>
                             </div>
                         <div class="item2-content">
-                            <h2>first</h2>
+                            <h2>五月天</h2>
                             <p>
                                 8月24号看五月天演唱会~
                                 
@@ -106,7 +116,7 @@
                                     
                                 </video>
                             </div>
-                            <div class="item2-content">
+                            <div class="item4-content">
                                 <h2>
                                     联系我
                                 </h2>
@@ -133,14 +143,15 @@
             <button id="right">向右</button> -->
         </footer>
 
-        <div id="loader-wrapper">
+        <!-- <div id="loader-wrapper">
             <div id="loader"></div>            
             <div class="loader-section section-left"></div>
             <div class="loader-section section-right"></div>            
-        </div>
+        </div> -->
     </div>
     <script src="js/jquery-1.11.3.min.js"></script>
     <script src="js/index.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 
 </html>
