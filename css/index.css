@@ -1,19 +1,23 @@
-*{
+* {
     margin: 0;
-    padding: 0; 
+    padding: 0;
 }
-li{
+
+li {
     list-style: none;
 }
-#container a{
+
+#container a {
     text-decoration: none;
     color: white;
 }
-#container{
+
+#container {
     padding-top: 40px;
 }
-#nav{
-    background-color: rgba(255,255,255,0.7);
+
+#nav {
+    background-color: rgba(255, 255, 255, 0.7);
     width: 95%;
     display: flex;
     height: 100px;
@@ -22,29 +26,34 @@ li{
     align-items: center;
     justify-content: space-between;
 }
-#title{
+
+#title {
     font-size: 35px;
 }
-#title span{
+
+#title span {
     color: black;
 }
 
-.nav-icon{
+.nav-icon {
     display: inline-block;
-    background:  black;
+    background: black;
     border-radius: 50%;
     width: 50px;
     height: 50px;
     line-height: 50px;
     text-align: center;
 }
-.nav-icon::bofore{
+
+.nav-icon::bofore {
     content: '\f1d9';
 }
-.item-list{
-   display: none;
+
+.item-list {
+    display: none;
 }
-#nav-list{
+
+#nav-list {
     font-family: "Microsoft Yahei";
     height: 100%;
     font-size: 27px;
@@ -54,7 +63,8 @@ li{
     justify-content: space-around;
     margin-bottom: 0;
 }
- .nav-item{
+
+.nav-item {
     font-family: "Microsoft Yahei";
     width: 150px;
     height: 100px;
@@ -62,163 +72,240 @@ li{
     cursor: pointer;
     line-height: 100px;
 }
-.selected{
+
+.selected {
     background-color: white;
-    color:#5394D6;
+    color: #5394D6;
 }
+
 /* 正文 */
-#content{
+
+#content {
     text-align: center;
 }
-#content-wapper{
+
+#content-wapper {
     display: flex;
     justify-content: center;
 }
-.content-item{
+
+.content-item {
     margin-top: 40px;
 }
-.item1{
-    background-color: rgba(255,255,255,0.7); 
+
+.item1 {
+    background-color: rgba(255, 255, 255, 0.7);
     width: 800px;
-    height: 400px; 
-    display:block;  
+    height: 400px;
+    display: block;
 }
-.item1-content{
+
+.item1-content {
     padding: 30px 40px;
 }
-.item1-content h2{
+
+.item1-content h2 {
     margin: 30px 0;
 }
-.item1-content p{
+
+.item1-content p {
     font-size: 18px;
     line-height: 40px;
 }
-.item2{
-   display: none;
-   vertical-align: middle;
+
+/* .item1-content p,
+.item1-content h1,
+.item1-content h2 {
+    transition: all ease 1s 1s;
+} */
+
+.item2 {
+    display: none;
+    vertical-align: middle;
 }
-.item2-detail{
+
+.item2-detail {
     width: 360px;
     height: 400px;
     display: inline-block;
-    background-color: rgba(255,255,255,0.7); 
+    background-color: rgba(255, 255, 255, 0.7);
     vertical-align: middle;
 }
-.item2-detail:nth-child(1){
+
+.item2-detail:nth-child(1) {
     margin-right: 30px;
 }
-.item2-content{
+
+.item2-content {
     padding: 30px 20px;
-    line-height: 25px;  
+    line-height: 25px;
 }
-.item2-content p{
+
+.item2-content p {
     margin-top: 20px;
     font-size: 18px;
     text-align: left;
 }
-.item3{
+
+.item3 {
     text-align: left;
     display: none;
-    /* color: white; */
     padding: 0 40px;
+    color: white;
+    text-shadow: 2px 2px black;
 }
-.item3 img{
+
+.item3 img {
     border: 5px solid white;
 }
-.item3 p{
+
+.item3 p {
     margin: 20px 0;
     font-size: 18px;
 }
-.item4{
+
+.item4 {
     display: none;
 }
-.item4-detail{
+
+.item4-detail {
     width: 400px;
     height: 450px;
     display: inline-block;
-    background-color: rgba(255,255,255,0.7);
-    text-align: center;        
+    background-color: rgba(255, 255, 255, 0.7);
+    text-align: center;
 }
-.fomSubmit{
+
+.fomSubmit {
     /* margin-top: 30px; */
     text-align: center;
     width: 80%;
     margin: 30px auto;
 }
-input{
+
+input {
     width: 300px;
     height: 40px;
     background-color: transparent;
     margin-bottom: 10px;
     border-radius: 10px;
 }
-textarea{
+
+textarea {
     width: 300px;
     height: 60px;
     background-color: transparent;
 }
-.fomSubmit button{
+
+.fomSubmit button {
     width: 60px;
     height: 30px;
     background-color: transparent;
     border-style: none;
 }
-.videos_res{
-   position: fixed;
-   left: 0;
-   right: 0;
-   bottom: 0;
-   top: 0;
-   z-index: -88;
+
+.videos_res {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: -88;
 }
-.videos_res video{
-   width: 100%;
-   height: 100%;
-   object-fit: fill;
+
+.videos_res video {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
 }
-.nav-btn{
+
+.nav-btn {
     display: none;
 }
-.navbar-toggler{
-	float: right;
-	font-size: 1.75rem;
-	padding: 1rem 1.5rem;
-    background-color: rgba(255,255,255,0);
-	border-radius: 0;
-	position: absolute;
-	right: 40px;
+
+.navbar-toggler {
+    float: right;
+    font-size: 1.75rem;
+    padding: 1rem 1.5rem;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 0;
+    position: absolute;
+    right: 40px;
     top: 65px;
     border-style: none;
     border: 1px solid transparent;
     outline: none;
 }
-.item4-content button{
+
+.item4-content button {
     outline: none;
 }
-@media (max-width:992px){
-    .nav-btn{
+
+@media (max-width:992px) {
+    .nav-btn {
         display: inline-block;
-        top:-20px;       
+        top: -20px;
     }
-    .item-list{
+    .item-list {
         display: inline-block;
         position: relative;
     }
-    .item-list .dropdown-menu{
+    .item-list .dropdown-menu {
         position: absolute;
         top: 40px;
         left: -150px;
         width: 120px;
         min-width: 120px;
-        background-color: rgba(255,255,255,0.7);
+        background-color: rgba(255, 255, 255, 0.7);
     }
-    .nav-item{
+    .nav-item {
         width: 120px;
         height: 30px;
         line-height: 30px;
-        background-color: rgba(255,255,255,0.7);
+        background-color: rgba(255, 255, 255, 0.7);
     }
-    #nav-list{
+    #nav-list {
         display: none;
     }
+}
+
+@media (max-width:860px) {
+    .item1 {
+        width: 80%;
+    }
+}
+
+@media (max-width:760px) {
+    .item2 {
+        text-align: center;
+        width: 100%;
+    }
+    .item2-detail {
+        width: 80%;
+        text-align: center;
+        display: block;
+        margin: 30px auto;
+    }
+    .item2-detail:nth-child(1) {
+        margin: 30px auto;
+    }
+}
+
+#pro-imgs {
+    text-align: center;
+}
+
+#pro-imgs img {
+    margin: 5px;
+}
+#download{
+    width: 150px;
+    height: 40px;
+    display: inline-block;
+    background-color: rgb(230, 190, 15);
+    color: white;
+    font-weight: 400;
+    font-size: larger;
+    line-height: 40px;
+    margin-top: 30px;
 }
